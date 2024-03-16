@@ -1,0 +1,98 @@
+
+/* .anchor{
+  height: 35px;
+  width: 200px;
+  display: flex;
+  margin: 40px -20px 0px 120px ; 
+   display: flex; 
+  flex-direction: column;
+  height: 50px;
+  width: 200px;
+  margin: 30px 10px 0px 117px;
+  padding: 2px 0px 0px 29px;
+} */
+.buttonNav{
+  height: 40px;
+  width: 74px;
+  margin: 40px 70px 0px 9px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
+  
+
+.input{
+  width: 60vw;
+  text-align: left;
+  height: 45px;
+  border-radius: 10px;
+  font-size: larger;
+  padding: 0px 0px 0px 30px ;
+}
+.tophalf{
+  text-align: right;
+  /* padding: 10px 0px 2px 0px; */
+  display: flex;
+  /* margin: 20px 0px 10px 30px; */
+
+}
+.bottomhalf{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0rem 0rem 0rem 18rem;
+  /* margin: 3px 3px 0px 5px; */
+  /* padding: 0px 2px 2px 300px; */
+  /* flex-wrap: wrap; */
+ 
+}
+.list{
+  /* padding: 0px 25px 2px 0px; */
+  list-style-type: none;
+  /* text-decoration: none; */
+  /* box-sizing: border-box; */
+  /* position: relative; */
+  /* display: flex; */
+  /* justify-content: space-evenly; */
+ 
+}
+.anc{
+  text-decoration: none;
+  box-sizing: border-box;
+  position: relative;
+  font-size: medium;
+  color: black;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+}
+.image{
+  height: 20px;
+  /* margin: 51px 0px 0px -818px; */
+  margin: 3.2rem 0rem 0rem -48.5rem;
+  position: absolute;
+}
+.searchbar{
+  position: relative;
+  width: 80%;
+  margin: 0em 0em 0em 1em;
+}
+
+.anc::after{
+  content: "";
+  position: absolute;
+  background-color: green;
+  left: 0;
+  bottom: -0.3rem;
+  height: 3px;
+  width: 0;
+  transition: 0.4s ease-in-out;
+
+}
+.anc:hover::after{
+  content: "";
+  position: absolute;
+  background-color: green;
+  left: 0;
+  bottom: -0.3rem;
+  height: 3px;
+  width: 100%;
+}

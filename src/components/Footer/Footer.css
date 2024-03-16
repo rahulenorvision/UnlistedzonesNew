@@ -1,0 +1,60 @@
+.blocks{
+    display: flex;
+    flex-direction: row;
+    background-color: #14213D;
+    color: white; 
+    overflow: hidden;
+}
+.block1{
+    display: flex;
+    flex-direction: column;
+}
+.block1>img{
+    padding: 1em 0em 0em 2em;
+}
+.block1>p{
+    padding: 1em 0em 0em 2em
+}
+.app{
+    padding: 1em 0em 0em 1em;
+}
+
+.anchor{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 200px;
+    margin: 0px 10px 0px 100px;
+    padding: 0px 0px 0px 6px;
+    
+    
+}
+.insideanch{
+    text-decoration: none;
+    color: white;
+    flex-direction: column;
+    padding: 0.5em 0em 0.5em 0em ;
+}
+.block2{
+    display: flex;
+    flex-direction: column;
+}
+.block3{
+    display: flex;
+    flex-direction: column;
+}
+.block4{
+    display: flex;
+    flex-direction: column;
+}
+.insideanch:hover{
+    color: green;
+}
+.anchorfoot{
+    padding: 10px 0px 0px 100px ;
+    font-size: x-large;
+}
+
+.pfooter{
+    padding: 0px 0px 0px 81px ;
+}

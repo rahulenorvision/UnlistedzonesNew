@@ -1,0 +1,16 @@
+#contpara{
+    padding: 1em 9em 1em 14em;
+    font-size: medium;
+}
+.formup>h1{
+    font-weight: 700;
+    margin: 1em 0em 0em 17em;
+}
+#inputcontact{
+    display: flex;
+    flex-direction: column;
+    margin: 3em 1em 3em 3em;
+}
+#input2contact{
+    margin: 4em 0em 2em 3em;
+}

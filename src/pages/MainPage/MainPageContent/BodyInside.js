@@ -22,7 +22,7 @@ export default function BodyInside() {
             <h1 style={{"padding-top": "100px","margin-left": "350px"}}>Top Sectors In Unlisted Market</h1>
             <p style={{"margin-left": "280px","margin-bottom": "65px"}}>Discover and Nagivate The Leading Sectors That Are Shaping The Unlisted Market Landscape Today.</p>
         </Typography>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} style={{"margin-left": "80px"}}>
+      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} style={{marginLeft: "10rem" }}>
         <Grid xs={2} style={{width:150,height:150}} spacing={10} >
             <Item>
           <Box sx={{width:100,height:150,}}>

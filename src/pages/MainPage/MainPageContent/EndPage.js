@@ -81,7 +81,7 @@ export default function EndPage() {
       </CardActionArea>
     </Card>
     </Box>
-    <Box sx={{padding: "2em 0em 0em 35em",margin:"2em 0em 2em 0em"}}>
+    <Box sx={{padding: "2em 0em 0em 30em",margin:"2em 0em 2em 0em"}}>
     <Button variant="outlined" sx={{width:"16em",height: "3em",borderRadius: "14px",color: "black",border: "1px solid",fontSize: "large",fontWeight: 700}}>View More</Button>
     </Box>
     </>

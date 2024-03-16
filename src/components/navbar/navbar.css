@@ -29,6 +29,8 @@
   border-radius: 10px;
   font-size: larger;
   padding: 0px 0px 0px 30px ;
+  display: flex;
+  margin: 2em 0em 3em 0em;
 }
 .tophalf{
   text-align: right;

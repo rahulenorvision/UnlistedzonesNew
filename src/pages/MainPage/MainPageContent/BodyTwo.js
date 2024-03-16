@@ -17,17 +17,17 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function BodyTwo() {
   return (
-    <Box sx={{ width: '80%',height:"100%" }} >
+    <Box sx={{ width: '90%',height:"100%" }} >
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid xs={12}>
-          <Typography style={{"padding-left": "35rem","padding-top": "6rem"}}>
+          <Typography style={{"padding-left": "33rem","padding-top": "6rem"}}>
                 <h1>New Arrivals</h1>
             </Typography>
         </Grid>
-        <Grid xs={12} style={{"padding-left": "17rem"}}>
+        <Grid xs={12} style={{"padding-left": "13rem"}}>
           <Typography><p>Discover The latest Arrivals In Unlisted Shares and Elevate YOUR Investment Portfolio with Unlisted Zone Today.</p></Typography>
         </Grid>
-        <div style={{"display":"flex",padding: "5em 0em 5em 16em" }}>
+        <div style={{"display":"flex",padding: "0em 0em 0em 14em" ,flexWrap:"wrap"}}>
         <Grid xs={6} spacing={2} sx={{width:400}} >
           <Item style={{"display":"flex","border": "1px solid lightgrey"}}><img src={rrp} alt='good'/>
           <Typography style={{"font-size": "large"}}>
@@ -35,6 +35,16 @@ export default function BodyTwo() {
           </Typography>
           </Item>
           
+        </Grid>
+        <Grid xs={6} spacing={2} sx={{width:400}} >
+          <Item style={{"display":"flex","border": "1px solid lightgrey"}}><img src={goodluck} alt='rapid'/>
+          <Typography style={{"font-size": "large"}}>
+          <p>Good Luck Defence And<br/> Aerospace Unlisted... <br/>&#8377;325<br/>(+0) (0%) 6M</p></Typography></Item>
+        </Grid>
+        <Grid xs={6} spacing={2} sx={{width:400}} >
+          <Item style={{"display":"flex","border": "1px solid lightgrey"}}><img src={goodluck} alt='rapid'/>
+          <Typography style={{"font-size": "large"}}>
+          <p>Good Luck Defence And<br/> Aerospace Unlisted... <br/>&#8377;325<br/>(+0) (0%) 6M</p></Typography></Item>
         </Grid>
         <Grid xs={6} spacing={2} sx={{width:400}} >
           <Item style={{"display":"flex","border": "1px solid lightgrey"}}><img src={goodluck} alt='rapid'/>

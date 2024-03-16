@@ -30,15 +30,15 @@ export default function RaiseFunding(){
             <div className='letsbuild1'>
             <h1> Let Us Build Together</h1>
             <div className='letsbuild11'>
-                <CheckCircleIcon sx={{color: "green"}}/>
+                <CheckCircleIcon sx={{color: "green",padding:"1.1rem 0rem 0rem 0rem"}}/>
                 <p>Empowering SMEs Promoters With Growth Capital.</p>
             </div>
             <div className='letsbuild11'>
-            <CheckCircleIcon sx={{color: "green"}}/>
+            <CheckCircleIcon sx={{color: "green",padding:"1.1rem 0rem 0rem 0rem"}}/>
                 <p>Empowering SMEs Promoters With Growth Capital.</p>
             </div>
             <div className='letsbuild11'>
-            <CheckCircleIcon sx={{color: "green"}}/>
+            <CheckCircleIcon sx={{color: "green",padding:"1.1rem 0rem 0rem 0rem"}}/>
                 <p>Empowering SMEs Promoters With Growth Capital.</p>
             </div>
             <Button variant="contained" sx={{backgroundColor: "black"}}>Raise Funds</Button>
@@ -51,15 +51,15 @@ export default function RaiseFunding(){
                 <h1>Get Ready To Raise Fund</h1>
                 <p>At Unlistedzone, Our Expert Team Thoroughly evaluates SMEs, Offering Clear And Helpful Feedback. We Aid In Crafting Impactful Company Presentation And Facilitate Timely Funding From Suitable Investors.</p>
                 <div className='letsbuild11'>
-                <CheckCircleIcon sx={{color: "green"}}/>
+                <CheckCircleIcon sx={{color: "green",padding: "1rem 0rem 0rem 0rem"}}/>
                 <p>FundRaising Via SME IPO or Pre-IPO Round.</p>
             </div>
             <div className='letsbuild11'>
-                <CheckCircleIcon sx={{color: "green"}}/>
+                <CheckCircleIcon sx={{color: "green",padding: "1rem 0rem 0rem 0rem"}}/>
                 <p>Create Investors Presentation.</p>
             </div>
             <div className='letsbuild11'>
-                <CheckCircleIcon sx={{color: "green"}}/>
+                <CheckCircleIcon sx={{color: "green",padding: "1rem 0rem 0rem 0rem"}}/>
                 <p>Structured Learning Program For Early Stage Success.</p>
             </div>
             </div>
@@ -69,15 +69,15 @@ export default function RaiseFunding(){
             <h1>Raise Fund Vis SME IPOs</h1>
             <p>Unlock Growth Potential With SME IPOs; Our Expertise Guides Companies In Successful Fund-Raising And Market Expansion. </p>
             <div className='letsbuild11'>
-                <CheckCircleIcon sx={{color: "green"}}/>
+                <CheckCircleIcon sx={{color: "green",padding:"1rem 0rem 0rem 0rem"}}/>
                 <p>At Least Three Year Track Record.</p>
             </div>
             <div className='letsbuild11'>
-                <CheckCircleIcon sx={{color: "green"}}/>
+                <CheckCircleIcon sx={{color: "green",padding:"1rem 0rem 0rem 0rem"}}/>
                 <p>Paid Upto Capital &lt; 25 cr.</p>
             </div>
             <div className='letsbuild11'>
-                <CheckCircleIcon sx={{color: "green"}}/>
+                <CheckCircleIcon sx={{color: "green",padding:"1rem 0rem 0rem 0rem"}}/>
                 <p>Net Tangible Asset 3cr.</p>
             </div>
             </div>
@@ -163,7 +163,7 @@ export default function RaiseFunding(){
                         </div>
                        </form>
 
-                       <Button variant="contained" sx={{backgroundColor:"green",margin: "0em 0em 0em 12em" }}>Continue To Personal Details</Button>
+                       <Button variant="contained" sx={{backgroundColor:"green",margin: "0em 0em 0em 5em" }}>Continue To Personal Details</Button>
                 </div>
                 <div className='accordianraisingfunds'>
                     <h1>Frequently Asked Questions</h1>

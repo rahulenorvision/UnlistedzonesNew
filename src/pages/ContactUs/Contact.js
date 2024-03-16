@@ -18,7 +18,7 @@ export default function Contact(){
             <div className="input"><div className="input1"><label>Number 
                 </label><input placeholder="Enter Your Number" type="number" /></div>
             <div className="input1"><label>Subject </label><input placeholder="Subject" type="text" /></div></div>
-            <div className="input2" id='input2contact'><label>Where Did You Find Us?</label><select>
+            <div  id='input2contact'><label>Where Did You Find Us?</label><select>
                 <option>Select An Option</option>
                 <option>FaceBook</option>
                 <option>Google</option>
@@ -31,7 +31,7 @@ export default function Contact(){
             <label>Your Message </label><input type="text" />
             </div>
         </form>
-        <button className="formbutton" type="button">Submit</button>
+        <button id="formbuttoncontact" type="button">Submit</button>
     </div>
     <Footer/>
     </>

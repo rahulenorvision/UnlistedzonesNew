@@ -104,9 +104,9 @@ export default function SellIPOShares (){
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HEZczsRj7m0?si=EBJrPW3oR4l7O38_" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
         </div>
-        <div className="formup">
-            <h1>Reach Out To Us</h1>
-            <p>Don't Be Shy Just Tell Us About Yourself And We'll Figure Out The Best Option For You And Your Project.<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Don't Like Filling Up Forms? Mail Us Then <a href="/">partners@unlistedzone.com</a></p>
+        <div className="formup" >
+            <h1 id="formsellshares">Reach Out To Us</h1>
+            <p>Don't Be Shy Just Tell Us About Yourself And We'll Figure Out The Best Option For You And Your Project. Don't Like Filling Up Forms? Mail Us Then <a href="/">partners@unlistedzone.com</a></p>
             <form>
                 <div className="input">
                 <div className="input1">

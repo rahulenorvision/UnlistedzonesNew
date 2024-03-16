@@ -30,13 +30,13 @@
     margin: 3em 0em 1em 20em;
 }
 .letsbuild1{
-    padding: 5em 0em 0em 2em ;
+    padding: 0em 0em 0em 2em ;
 }
 .letsbuild11{
     display: flex;
 }
 .letsbuild11>p{
-    padding: 0em 0em 0em 1em;
+    padding: 0em 0em 0em 0em;
 }
 .raisefund{
     display: flex;

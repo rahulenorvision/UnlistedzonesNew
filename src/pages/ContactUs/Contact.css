@@ -11,6 +11,28 @@
     flex-direction: column;
     margin: 3em 1em 3em 3em;
 }
+
 #input2contact{
-    margin: 4em 0em 2em 3em;
+    width: 11em;
+    height: 2em;
+    border-radius: 10px;
+    font-size: medium;
+    margin: 0rem 0rem 0rem 5rem;
+   
+}
+#input2contact>select{
+    width: 10em ;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    font-size: medium;
+}
+#formbuttoncontact{
+    margin: 1em 0em 2em 27em;
+    width: 10em;
+    height: 2.5em;
+    color: white;
+    background-color: green;
+    border: 2px solid green;
+    border-radius: 10px;
+    font-size: large;
 }

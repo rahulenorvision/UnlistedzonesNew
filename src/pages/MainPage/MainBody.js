@@ -102,23 +102,23 @@ export default function MainBody(){
         {/* <TablePage/> */}
         <div  style={{height:"35em"}}>
             <div>
-        <h1 style={{"padding": "2em 0em 0em 8em","fontSize": "xxx-large",    "fontWeight": "700"}}>Process To Buy Unlisted Shares</h1>
-        <p style={{"padding": "2em 0em 0em 28em"}}>Recommended For Those Interested In Dealing With Unlisted Shares</p>
+        <h1 style={{"padding": "2em 0em 0em 6em","fontSize": "xxx-large",    "fontWeight": "700"}}>Process To Buy Unlisted Shares</h1>
+        <p style={{"padding": "1em 0em 0em 24em"}}>Recommended For Those Interested In Dealing With Unlisted Shares</p>
         </div>
         <div style={{"display":"flex","margin": "5em 0em 0em 3em","justifyContent":"space-evenly"}}>
             <div style={{"display":"flex","height": "0em","width": "23em","marginLeft": "4em" }}>
                 <div style={{"margin": "1em 2em 0em 0em","padding": "0.2em 1em 0em 0em"}}>
-                <div style={{"backgroundColor": "green", "color": "white", "height": "2.5em","width": "2.5em","borderRadius": "51px", "textAlign": "center","padding":" 7px 0px 0px 1px","marginLeft": "3em"}}>1</div>
-                <div style={{"fontSize": "xxLarge","fontWeight": "600"}}>Contact Us</div>
-                <div>Connect With Our RMs and Get Best Unlisted Share Prices.</div>
+                <div style={{"backgroundColor": "green", "color": "white", height: "2em",width:" 2.5em","borderRadius": "51px", "textAlign": "center","padding":" 7px 0px 0px 0px","marginLeft": "3em"}}>1</div>
+                <div style={{"fontSize": "xxLarge","fontWeight": "600",margin: "1rem 0rem 0rem 2rem" }}>Contact Us</div>
+                <div style={{padding: "1rem 0rem 0rem 0rem" }}>Connect With Our RMs and Get Best Unlisted Share Prices.</div>
                 </div>
                 <div style={{"fontSize": "8em","color":"#008000bd"}}>&rarr;</div>
             </div>
             <div style={{"display":"flex","height": "0em","width": "23em","marginLeft": "4em" }}>
             <div style={{"margin": "1em 2em 0em 0em"}}>
-                <div style={{"backgroundColor": "green", "color": "white", "height": "2.5em","width": "2.5em","borderRadius": "51px", "textAlign": "center","padding":" 7px 0px 0px 1px","marginLeft": "3em"}}>2</div>
-                <div style={{"fontSize": "xxLarge","fontWeight": "600","width": "8em"}}>Deal Processing</div>
-                <div>First, The Buyer Sends Payment To Our Bank Then UnlistedZone Team Starts Processing.</div>
+                <div style={{"backgroundColor": "green", "color": "white",height: "2em",width:" 2.5em","borderRadius": "51px", "textAlign": "center","padding":" 7px 0px 0px 0px","marginLeft": "3em"}}>2</div>
+                <div style={{"fontSize": "xxLarge","fontWeight": "600","width": "8em",margin: "1rem 0rem 0rem 1rem "}}>Deal Processing</div>
+                <div style={{padding: "1rem 0rem 0rem 0rem" }}>First, The Buyer Sends Payment To Our Bank Then UnlistedZone Team Starts Processing.</div>
             </div>
                 <div style={{"fontSize": "8em","color":"#008000bd"}}>&rarr;</div>
                 {/* <Box>
@@ -127,9 +127,9 @@ export default function MainBody(){
             </div>
             <div style={{"display":"flex","height": "0em","width": "23em","marginLeft": "4em" }}>
                 <div style={{"margin": "1em 2em 0em 0em","padding": "0.2em 0em 0em 1em","width": "15em"}}>
-                <div style={{"backgroundColor": "green", "color": "white", "height": "2.5em","width": "2.5em","borderRadius": "51px", "textAlign": "center","padding":" 7px 0px 0px 1px","marginLeft": "3em"}}>3</div>
-                <div style={{"fontSize": "xxLarge","fontWeight": "600"}}>Deal Completion</div>
-                <div>After Getting The Payment Our Team Transfer Shares Within 24hrs</div>
+                <div style={{"backgroundColor": "green", "color": "white", height: "2em",width:" 2.5em","borderRadius": "51px", "textAlign": "center","padding":" 7px 0px 0px 0px","marginLeft": "3em"}}>3</div>
+                <div style={{"fontSize": "xxLarge","fontWeight": "600",margin:"1rem 0rem 0rem 1rem" }}>Deal Completion</div>
+                <div style={{padding: "1rem 0rem 0rem 0rem" }}>After Getting The Payment Our Team Transfer Shares Within 24hrs</div>
                 </div>
             </div>
         </div>

@@ -68,7 +68,7 @@ export default function TablePage() {
     <Typography variant='h3' style={{ "marginLeft": "9em","paddingTop": "2em",    "fontWeight": "500"}}>Past IPO Performance</Typography>
     <Typography component={'p'} style={{ "marginLeft": "18em","marginTop": "1em","marginBottom": "3em"}}>Explore the Historical IPO Performance of Unlisted Shares to Inform Your Investment Strategy Today.</Typography>
     <TableContainer component={Paper} style={{ "overflow":"hidden","height": "58em",
-    "width": "83em","marginLeft": "0.7em","borderRadius": "1em"}}>
+    "width": "75em","marginLeft": "0.7em","borderRadius": "1em"}}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table" >
         <TableHead >
           <TableRow >

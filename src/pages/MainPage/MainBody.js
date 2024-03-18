@@ -99,7 +99,7 @@ export default function MainBody(){
         </div>
         <BodyInside/>
         <BodyTwo/>
-        {/* <TablePage/> */}
+        <TablePage/>
         <div  style={{height:"35em"}}>
             <div>
         <h1 style={{"padding": "2em 0em 0em 6em","fontSize": "xxx-large",    "fontWeight": "700"}}>Process To Buy Unlisted Shares</h1>

@@ -2,12 +2,13 @@ import React from 'react';
 import './Footer.css'
 import badge from './badge.png';
 import apple from './apple.png';
+import aqt from '../../assets/images/aqt.png';
 
 export default function Footer(){
     return(
         <>
             <div className='blocks'>
-            <div className='block1'><img src='https://unlistedzone.com/frontend/img/logo-white.svg' alt='footer'/>
+            <div className='block1'><img src={aqt} alt='footer'/>
             <p>
                 India's No.1 Platform for<br/> Buying and Selling Unlisted <br/> Shares.
             </p>

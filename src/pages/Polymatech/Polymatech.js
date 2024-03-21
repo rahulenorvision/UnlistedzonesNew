@@ -30,9 +30,69 @@ import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
-// import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-// import CKEditorInspector from '@ckeditor/ckeditor5-inspector';
+import JoditEditor, { Jodit } from 'jodit-react';
+import Navbar from '../../components/navbar/index';
+import Footer from "../../components/Footer/Footer";
+import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
+import { Chart } from "react-google-charts";
+import Data from './Poly.json';
+import Poly1 from './Poly1.json';
+import Poly2 from './Poly2.json';
 
+
+const Chartdata = [
+  ['Day','Prices'],
+  ['',475],
+  ['',525],
+  ['',500],
+  ['',550],
+  ['',490],
+  ['',600],
+  ['',675],
+  ['',600],
+  ['',500],
+  ['',530],
+  ['',525],
+  ['',775],
+  ['',700],
+  ['',675],
+  ['',545],
+  ['',565],
+  ['',750],
+  ['',590],
+  ['',510],
+  ['',850],
+  ['',500],
+  ['',490],
+  ['',500],
+  ['',550],
+  ['',650],
+  ['',850],
+  ['',900],
+  ['',1200],
+  ['',1000],
+  ['',850],
+  ['',500],
+  ['',650],
+  ['',550],
+  ['',550],
+  ['',550],
+  ['',550],
+   ['',550],
+]
+
+
+const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
+  height: 10,
+  borderRadius: 5,
+  [`&.${linearProgressClasses.colorPrimary}`]: {
+    backgroundColor: theme.palette.grey[theme.palette.mode === 'light' ? 200 : 800],
+  },
+  [`& .${linearProgressClasses.bar}`]: {
+    borderRadius: 5,
+    backgroundColor: theme.palette.mode === 'light' ? "#06b11c" : '#308fe8',
+  },
+}));
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -42,9 +102,6 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
   }));
 
-function createMydata(name, calories, fat, carbs) {
-    return { name, calories, fat, carbs };
-  }
   
   const columns = [
     createData('Frozen yoghurt', 159, 6.0, 24),
@@ -98,8 +155,8 @@ const Accordion = styled((props) => (
   ))(({ theme }) => ({
     backgroundColor:
       theme.palette.mode === 'dark'
-        ? 'rgba(255, 255, 255, .05)'
-        : 'rgba(0, 0, 0, .03)',
+        ? 'white'
+        : 'white',
     flexDirection: 'row-reverse',
     '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
       transform: 'rotate(90deg)',
@@ -114,6 +171,10 @@ const Accordion = styled((props) => (
     borderTop: '1px solid rgba(0, 0, 0, .125)',
   }));
 
+  const config ={
+    buttons:["bold","italic","underline","paragraph","superscript","subscript","spellcheck","link","symbols","undo","redo","preview"]
+  }
+
 export default function Polymatech(){
     const [age, setAge] = React.useState('');
     const [expanded, setExpanded] = React.useState('panel1');
@@ -127,6 +188,7 @@ export default function Polymatech(){
       };
     return(
         <>
+        <Navbar/>
         <Box sx={{display: "flex",justifyContent: "center",padding:" 2em 0em 0em 0em"}}>
         <Typography variant='p' sx={{cursor:"pointer"}}>Home</Typography><ArrowRightIcon /><Typography variant='p' sx={{cursor:"pointer"}}>Shares</Typography><ArrowRightIcon /><Typography variant='p' sx={{color:"darkgray"}}>Polymatech Unlisted Shares</Typography>
         </Box>
@@ -135,26 +197,15 @@ export default function Polymatech(){
         <img src={i3} alt="polymatech unlisted"/>
         <Typography variant='p' sx={{margin: "0.5em 0em 0em 1em"}}>Polymatech Unlisted Shares</Typography>
         </Box>
-
-        {/* <div className="cardpoly1">
-            <div>
-            <h1>Graph</h1>
-            </div>
-            <div className="cardpoly11">
-                <div>
-                    <p>Buy</p>
-                    <p>Sell</p>
-                </div>
-            <p>Polymatch Unlisted Shares<br/> &#8377;895</p>
-            <label>Quantity:</label>
-            <input type="number"/><br/>
-            <label>Message:</label>
-            <input type="text"/><br/>
-            <button type="button">Buy</button>
-            </div>
-        </div> */}
         <Box sx={{display:"flex"}}>
-            <Box sx={{width:"50rem",margin:"1rem 0rem 1rem 1rem"}}><Typography>Graph Will Be Created Which Is Why This Space Is Empty.Graph Will Be Created Which Is Why This.Graph Will Be Created Which Is Why This Space Is Empty.Graph Will Be Created Which Is Why This.Graph Will Be Created Which Is Why This Space Is Empty.Graph Will Be Created Which Is Why This  </Typography></Box>
+            <Box sx={{width:"55rem"}}>
+            <Chart
+        chartType="LineChart"
+        data={Chartdata}
+        width="100%"
+        height="95%"
+        />
+            </Box>
         <Card sx={{ width: "25rem",height:"25rem",border:"1px solid darkgray",borderRadius:"10px",margin:"0rem 1rem 1rem 1rem" }}>
         <CardContent>
             <Box sx={{display:"flex"}}>
@@ -277,7 +328,7 @@ export default function Polymatech(){
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
+          {Data.map((row) => (
             <TableRow
               key={row.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
@@ -285,9 +336,9 @@ export default function Polymatech(){
               <TableCell component="th" scope="row">
                 {row.name}
               </TableCell>
-              <TableCell align="right">{row.calories}</TableCell>
-              <TableCell align="right">{row.fat}</TableCell>
-              <TableCell align="right">{row.carbs}</TableCell>
+              <TableCell align="right">{row.year1}</TableCell>
+              <TableCell align="right">{row.year2}</TableCell>
+              <TableCell align="right">{row.year3}</TableCell>
             </TableRow>
           ))}
         </TableBody>
@@ -304,7 +355,7 @@ export default function Polymatech(){
           </TableRow>
         </TableHead>
         <TableBody>
-          {columns.map((column) => (
+          {Poly1.map((column) => (
             <TableRow
               key={column.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
@@ -312,19 +363,34 @@ export default function Polymatech(){
               <TableCell component="th" scope="row">
                 {column.name}
               </TableCell>
-              <TableCell align="right">{column.calories}</TableCell>
-              <TableCell align="right">{column.fat}</TableCell>
-              <TableCell align="right">{column.carbs}</TableCell>
+              <TableCell align="right">{column.year1}</TableCell>
+              <TableCell align="right">{column.year2}</TableCell>
+              <TableCell align="right">{column.year3}</TableCell>
             </TableRow>
           ))}
         </TableBody>
       </Table>
     </TableContainer>
         </Box>
-
-            \\**
-            Put here shareholding pattern
-             *\\
+        <Box sx={{margin:"0rem 0rem 1rem 1rem",width:"50rem",border:"1px solid darkgray",borderRadius: "15px"}}>
+        <Box sx={{margin:"0rem 1rem 0rem 1rem",display:"flex"}}>
+          <Box variant='h5' sx={{padding:"0.5rem 5rem 1rem 5rem"}}>2021</Box>
+          <Box variant='h5' sx={{padding:"0.5rem 9rem 1rem 9rem"}}>2022</Box>
+          <Box variant='h5' sx={{padding:"0.5rem 7rem 1rem 7rem"}}>2023</Box>
+        </Box>
+        <Box sx={{margin:"1rem 1rem 1rem 1rem"}}><Typography>Eswara Rao Nandan</Typography>
+        <BorderLinearProgress variant="determinate" value={50} />
+        </Box>
+        <Box sx={{margin:"1rem 1rem 1rem 1rem"}}><Typography>Uma Rao Nandan</Typography>
+        <BorderLinearProgress variant="determinate" value={20} />
+        </Box>
+        <Box sx={{margin:"1rem 1rem 1rem 1rem"}}><Typography>Rao Nandan</Typography>
+        <BorderLinearProgress variant="determinate" value={20} />
+        </Box>
+        <Box sx={{margin:"1rem 1rem 1rem 1rem"}}><Typography>Company</Typography>
+        <BorderLinearProgress variant="determinate" value={10} />
+        </Box>
+        </Box>
 
         <hr style={{width:"50rem",margin:"0rem 0rem 1rem 1rem"}}/>
         <Typography sx={{fontSize:"x-large",fontWeight: 600,margin:"1rem 0rem 1rem 2rem"}}>Events</Typography>
@@ -430,7 +496,7 @@ export default function Polymatech(){
     <Box sx={{width:"40rem",margin:"3rem 0rem 2rem 17rem"}}>
     <Accordion expanded={expanded === 'panel1'} onChange={handleChange1('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>Collapsible Group Item #1</Typography>
+          <Typography>Q.1: How To Buy Polymatech Unlisted Shares ?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -443,7 +509,7 @@ export default function Polymatech(){
       </Accordion>
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange1('panel2')}>
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography>Collapsible Group Item #2</Typography>
+          <Typography>Q.2: How To Sell Polymatech Unlisted Shares ?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -456,7 +522,7 @@ export default function Polymatech(){
       </Accordion>
       <Accordion expanded={expanded === 'panel3'} onChange={handleChange1('panel3')}>
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography>Collapsible Group Item #3</Typography>
+          <Typography>Q.3: What Is The Lock-In Period Of Polymatech Unlisted Shares ?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -469,7 +535,7 @@ export default function Polymatech(){
       </Accordion>
       <Accordion expanded={expanded === 'panel4'} onChange={handleChange1('panel4')}>
         <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-          <Typography>Collapsible Group Item #4</Typography>
+          <Typography>Q.4 How Is DIS used To Sell Polymatech Unlisted Shares ?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -482,7 +548,7 @@ export default function Polymatech(){
       </Accordion>
       <Accordion expanded={expanded === 'panel5'} onChange={handleChange1('panel5')}>
         <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
-          <Typography>Collapsible Group Item #5</Typography>
+          <Typography>Q.5 Minimum Ticket Size For Investment In Polymatech Unlisted Shares ?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -495,7 +561,7 @@ export default function Polymatech(){
       </Accordion>
       <Accordion expanded={expanded === 'panel6'} onChange={handleChange1('panel6')}>
         <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
-          <Typography>Collapsible Group Item #6</Typography>
+          <Typography>Q.5 Minimum Ticket Size For Investment In Polymatech Unlisted Shares ?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -508,7 +574,7 @@ export default function Polymatech(){
       </Accordion>
       <Accordion expanded={expanded === 'panel7'} onChange={handleChange1('panel7')}>
         <AccordionSummary aria-controls="panel7d-content" id="panel7d-header">
-          <Typography>Collapsible Group Item #7</Typography>
+          <Typography>Q.5 Minimum Ticket Size For Investment In Polymatech Unlisted Shares ?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -521,7 +587,7 @@ export default function Polymatech(){
       </Accordion>
       <Accordion expanded={expanded === 'panel8'} onChange={handleChange1('panel8')}>
         <AccordionSummary aria-controls="panel8d-content" id="panel8d-header">
-          <Typography>Collapsible Group Item #8</Typography>
+          <Typography>Q.5 Minimum Ticket Size For Investment In Polymatech Unlisted Shares ?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -534,7 +600,7 @@ export default function Polymatech(){
       </Accordion>
       <Accordion expanded={expanded === 'panel9'} onChange={handleChange1('panel9')}>
         <AccordionSummary aria-controls="panel9d-content" id="panel9d-header">
-          <Typography>Collapsible Group Item #9</Typography>
+          <Typography>Q.5 Minimum Ticket Size For Investment In Polymatech Unlisted Shares ?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -547,7 +613,7 @@ export default function Polymatech(){
       </Accordion>
       <Accordion expanded={expanded === 'panel10'} onChange={handleChange1('panel10')}>
         <AccordionSummary aria-controls="panel10d-content" id="panel10d-header">
-          <Typography>Collapsible Group Item #10</Typography>
+          <Typography>Q.5 Minimum Ticket Size For Investment In Polymatech Unlisted Shares ?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -562,20 +628,11 @@ export default function Polymatech(){
       <hr style={{color:"darkgray"}}/>
       <Typography variant='h4' style={{margin:"2rem 0rem 2rem 15rem",fontWeight: 700}}>Discussion On Polymatech Unlisted Shares : </Typography>
       <hr style={{color:"darkgray",width:"50rem"}}/>
-      {/* <div className="App">
-      <CKEditor
-        editor={ClassicEditor}
-        data="<p>Hello from CKEditor 5!</p><h2>Try the inspector below</h2><ul><li>Check the Model</li><li>See the View</li><li>Check available commands</li></ul>"
-        onReady={(editor) => {
-          console.log('CKEditor React Component is ready to use!', editor);
-          CKEditorInspector.attach(editor);
-        }}
-        onChange={(event, editor) => {
-          const data = editor.getData();
-          console.log({ event, editor, data });
-        }}
-      />
-    </div> */}
+      <Box sx={{width:"50rem",margin:"4rem 0rem 4rem 13rem"}}>
+      <JoditEditor config={config}/>
+      <Button variant="contained" sx={{backgroundColor:"green",margin:"1rem 0rem 2rem 21rem"}}>Submit</Button>
+      </Box>
+      <Footer/>
         </>
     )
 }

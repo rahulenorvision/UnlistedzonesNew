@@ -10,7 +10,10 @@
     flex-direction: column;
 }
 .block1>img{
-    padding: 1em 0em 0em 2em;
+    /* padding: 1em 0em 0em 2em; */
+    background-color: white;
+    width: 10rem;
+    margin: 1rem 1rem 0rem 2rem;
 }
 .block1>p{
     padding: 1em 0em 0em 2em

@@ -14,6 +14,7 @@ import Screener from './pages/Screener/index.jsx';
 import SellIPOShares from './pages/SellIPOShares/SellIPOShares.js';
 import MediaCoverage from './pages/MediaCoverage/MediaCoverage.js';
 import ContactUs from './pages/ContactUs/Contact.js';
+import Polymatech from './pages/Polymatech/Polymatech.js';
 // import Media from './pages/Media/index.jsx';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path={'/screener'} exact element={<Screener />}/>
          <Route path={'/media-coverage'} exact element={<MediaCoverage />}/>  
          <Route path={'/contactus'} exact element={<ContactUs />}/>
+         <Route path={'/polymatech'} exact element={<Polymatech />}/>
         {/* <Route path={'/signin'} exact element={<Signin />}/>
         <Route path={'/signup'} exact element={<Signup />}/>
         <Route path={'/forgot'} exact element={<Forgot />}/>

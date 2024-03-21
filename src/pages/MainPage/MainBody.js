@@ -12,6 +12,7 @@ import BodyTwo from './MainPageContent/BodyTwo';
 import EndPage from './MainPageContent/EndPage';
 import TablePage from './MainPageContent/Table';
 import Testimonial from './MainPageContent/Testimonial';
+import {Link} from 'react-router-dom';
 
 
 
@@ -38,7 +39,7 @@ export default function MainBody(){
                 </p>
         </div>
         <div className='box12'>
-            <img src={polymatch} alt='nse'/>
+            <Link to={`/polymatech`}><img src={polymatch} alt='nse'/></Link>
             <p className='polymatch'>
                 NSE India Limited Unlisted<br/> Shares <br/>&#8377;4800
                 <br/><p> (+0.00)(0%) 15D</p>

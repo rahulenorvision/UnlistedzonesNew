@@ -3,6 +3,7 @@ import './Footer.css'
 import badge from './badge.png';
 import apple from './apple.png';
 import aqt from '../../assets/images/aqt.png';
+import {Link} from 'react-router-dom';
 
 export default function Footer(){
     return(
@@ -26,7 +27,7 @@ export default function Footer(){
                 <a className='insideanch' href='/'>SEBI Guidelines</a>
                 <a className='insideanch' href='/'>Frequently Asked Questions</a>
                 <a className='insideanch' href='/'>Knowledge Center</a>
-                <a className='insideanch' href='/'>Blog</a>
+                <Link to={`/blog`} className='insideanch' href='/'>Blog</Link>
                 <a className='insideanch' href='/'>Live Platform</a>
                 </div>
             </div>

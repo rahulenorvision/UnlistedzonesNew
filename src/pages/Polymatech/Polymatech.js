@@ -38,6 +38,10 @@ import { Chart } from "react-google-charts";
 import Data from './Poly.json';
 import Poly1 from './Poly1.json';
 import Poly2 from './Poly2.json';
+import { useState,useEffect } from "react";
+import axios from 'axios';
+import Graph from './Graph';
+
 
 
 const Chartdata = [
@@ -176,6 +180,15 @@ const Accordion = styled((props) => (
   }
 
 export default function Polymatech(){
+  const [data,setData] = useState([])
+  const [chartData,setChartData] = useState({})
+  useEffect(()=>{
+    axios.get('https://jsonplaceholder.typicode.com/todos')
+    .then((res)=>{setData(res.data)
+      }
+    )
+  },[])
+
     const [age, setAge] = React.useState('');
     const [expanded, setExpanded] = React.useState('panel1');
 
@@ -199,12 +212,7 @@ export default function Polymatech(){
         </Box>
         <Box sx={{display:"flex"}}>
             <Box sx={{width:"55rem"}}>
-            <Chart
-        chartType="LineChart"
-        data={Chartdata}
-        width="100%"
-        height="95%"
-        />
+            <Graph/>
             </Box>
         <Card sx={{ width: "25rem",height:"25rem",border:"1px solid darkgray",borderRadius:"10px",margin:"0rem 1rem 1rem 1rem" }}>
         <CardContent>
@@ -328,17 +336,17 @@ export default function Polymatech(){
           </TableRow>
         </TableHead>
         <TableBody>
-          {Data.map((row) => (
+          {data.map((row) => (
             <TableRow
-              key={row.name}
+              key={row.id}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-                {row.name}
+                {row.userId}
               </TableCell>
-              <TableCell align="right">{row.year1}</TableCell>
-              <TableCell align="right">{row.year2}</TableCell>
-              <TableCell align="right">{row.year3}</TableCell>
+              <TableCell align="right">{row.id}</TableCell>
+              <TableCell align="right">{row.title}</TableCell>
+              <TableCell align="right">{row.completed.toString()}</TableCell>
             </TableRow>
           ))}
         </TableBody>

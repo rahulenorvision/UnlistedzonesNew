@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import MainPage from './pages/MainPage/MainBody.js';
 
 import RaiseFunding from './pages/RaiseFunding/RaiseFunding.js';
-
+import Blog from './pages/Blog/Blog.js';
 import Unlisted from './pages/Unlisted/index.jsx';
 import Drhp from './pages/Drhp/index.jsx';
 import Screener from './pages/Screener/index.jsx';
@@ -32,6 +32,7 @@ function App() {
          <Route path={'/media-coverage'} exact element={<MediaCoverage />}/>  
          <Route path={'/contactus'} exact element={<ContactUs />}/>
          <Route path={'/polymatech'} exact element={<Polymatech />}/>
+         <Route path={'/blog'} exact element={<Blog />}/>
         {/* <Route path={'/signin'} exact element={<Signin />}/>
         <Route path={'/signup'} exact element={<Signup />}/>
         <Route path={'/forgot'} exact element={<Forgot />}/>

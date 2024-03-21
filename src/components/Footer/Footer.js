@@ -26,7 +26,7 @@ export default function Footer(){
                 <a className='insideanch' href='/'>Off Market Annexure</a>
                 <a className='insideanch' href='/'>SEBI Guidelines</a>
                 <a className='insideanch' href='/'>Frequently Asked Questions</a>
-                <a className='insideanch' href='/'>Knowledge Center</a>
+                <Link to={`/knowledgecenter`} className='insideanch' href='/'>Knowledge Center</Link>
                 <Link to={`/blog`} className='insideanch' href='/'>Blog</Link>
                 <a className='insideanch' href='/'>Live Platform</a>
                 </div>

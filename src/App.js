@@ -15,6 +15,7 @@ import SellIPOShares from './pages/SellIPOShares/SellIPOShares.js';
 import MediaCoverage from './pages/MediaCoverage/MediaCoverage.js';
 import ContactUs from './pages/ContactUs/Contact.js';
 import Polymatech from './pages/Polymatech/Polymatech.js';
+import KnowledgeCenter from './pages/KnowledgeCenter/KnowledgeCenter.js';
 // import Media from './pages/Media/index.jsx';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
          <Route path={'/contactus'} exact element={<ContactUs />}/>
          <Route path={'/polymatech'} exact element={<Polymatech />}/>
          <Route path={'/blog'} exact element={<Blog />}/>
+         <Route path={'/knowledgecenter'} exact element={<KnowledgeCenter />}/>
         {/* <Route path={'/signin'} exact element={<Signin />}/>
         <Route path={'/signup'} exact element={<Signup />}/>
         <Route path={'/forgot'} exact element={<Forgot />}/>

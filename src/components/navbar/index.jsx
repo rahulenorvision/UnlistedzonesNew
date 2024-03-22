@@ -4,7 +4,6 @@ import React from "react";
 import './navbar.css';
 import search from '../../assets/images/search.jpg';
 import {Link,Outlet} from 'react-router-dom';
-// import App from "../../App";
 import aqt from '../../assets/images/aqt.png'
 
 export default function Another(){
@@ -33,9 +32,6 @@ export default function Another(){
             
             </div>
         </ul>
-        </div>
-        <div>
-            {/* <App/> */}
         </div>
         
     </nav>

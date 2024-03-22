@@ -17,7 +17,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function BodyTwo() {
   return (
-    <Box sx={{ width: '90%',height:"100%" }} >
+    <Box sx={{ width: '90%',height:"100%",margin:"0rem 0rem 2rem 0rem" }} >
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid xs={12}>
           <Typography style={{"padding-left": "33rem","padding-top": "6rem"}}>

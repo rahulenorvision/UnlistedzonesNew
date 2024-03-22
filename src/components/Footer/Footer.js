@@ -23,21 +23,25 @@ export default function Footer(){
             <div className='block2'>
                 <h1 className='anchorfoot'>Quick Links</h1>
                 <div className='anchor'>
-                <a className='insideanch' href='/'>Off Market Annexure</a>
-                <a className='insideanch' href='/'>SEBI Guidelines</a>
-                <a className='insideanch' href='/'>Frequently Asked Questions</a>
+                <a className='insideanch' href='/off-market'>Off Market Annexure</a>
+                <a className='insideanch' href='/sebi'>SEBI Guidelines</a>
+                <a className='insideanch' href='/frequently-asked-questions'>Frequently Asked Questions</a>
                 <Link to={`/knowledgecenter`} className='insideanch' href='/'>Knowledge Center</Link>
                 <Link to={`/blog`} className='insideanch' href='/'>Blog</Link>
-                <a className='insideanch' href='/'>Live Platform</a>
+                {/* <a className='insideanch' href='/'>Live Platform</a> */}
                 </div>
             </div>
             <div className='block3' >
                 <h1 className='anchorfoot'>Unlisted Zone</h1>
                 <div className='anchor'>
-                    <a className='insideanch' href='/'>About Us </a>
-                    <a className='insideanch' href='/'>Contact Us </a>
-                    <a className='insideanch' href='/'>Privacy Policy </a>
-                    <a className='insideanch' href='/'>Terms Of Use </a>
+                    {/* <a className='insideanch' href='/'>About Us </a> */}
+                    <a className='insideanch' href='/drhp'>DRHP-FILED</a>
+                    <a className='insideanch' href='/sellipo'>Become Our Partner</a>
+                    {/* <a className='insideanch' href='/'>Contact Us </a> */}
+                    <a className='insideanch' href='/media-coverage'>Media Coverage</a>
+                    {/* <a className='insideanch' href='/'>Privacy Policy </a> */}
+                    <a className='insideanch' href='/raisefunding'>Raise Funding</a>
+                    {/* <a className='insideanch' href='/'>Terms Of Use </a> */}
                     <a className='insideanch' href='/'>Disclaimer </a>
                     <a className='insideanch' href='/'>Banking Alert </a>
                 </div>

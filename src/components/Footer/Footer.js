@@ -36,12 +36,12 @@ export default function Footer(){
                 <div className='anchor'>
                     {/* <a className='insideanch' href='/'>About Us </a> */}
                     <a className='insideanch' href='/drhp'>DRHP-FILED</a>
-                    <a className='insideanch' href='/sellipo'>Become Our Partner</a>
-                    {/* <a className='insideanch' href='/'>Contact Us </a> */}
+                    {/* <a className='insideanch' href='/sellipo'>Become Our Partner</a> */}
+                    <a className='insideanch' href='/contactUs'>Contact Us </a>
                     <a className='insideanch' href='/media-coverage'>Media Coverage</a>
                     {/* <a className='insideanch' href='/'>Privacy Policy </a> */}
-                    <a className='insideanch' href='/raisefunding'>Raise Funding</a>
-                    {/* <a className='insideanch' href='/'>Terms Of Use </a> */}
+                    {/* <a className='insideanch' href='/raisefunding'>Raise Funding</a> */}
+                    <a className='insideanch' href='/'>Terms Of Use </a>
                     <a className='insideanch' href='/'>Disclaimer </a>
                     <a className='insideanch' href='/'>Banking Alert </a>
                 </div>

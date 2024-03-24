@@ -68,8 +68,8 @@ export default function BodyInside() {
           </Box></Item>
         </Grid>
       </Grid>
-      <Button variant="outlined" style={{"margin-left": "500px","color": "#14213D","border":"1px solid  #14213D","width":"200px",
-    "height": "40px", "margin-top": "100px","border-radius":"9px","font-size":"large"}}>View More</Button>
+      {/* <Button variant="outlined" style={{"margin-left": "500px","color": "#14213D","border":"1px solid  #14213D","width":"200px",
+    "height": "40px", "margin-top": "100px","border-radius":"9px","font-size":"large"}}>View More</Button> */}
 
     </Box>
   );

@@ -59,5 +59,11 @@
 }
 
 .pfooter{
-    padding: 0px 0px 0px 81px ;
+    padding: 0px 0px 0px 40px;
+    font-size: medium;
+}
+.footoffice{
+    padding: 10px 0px 0px 50px;
+    font-size: x-large;
+
 }

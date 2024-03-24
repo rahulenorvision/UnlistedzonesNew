@@ -23,7 +23,7 @@ export default function Footer(){
             <div className='block2'>
                 <h1 className='anchorfoot'>Quick Links</h1>
                 <div className='anchor'>
-                <a className='insideanch' href='/off-market'>Off Market Annexure</a>
+                {/* <a className='insideanch' href='/off-market'>Off Market Annexure</a> */}
                 <a className='insideanch' href='/sebi'>SEBI Guidelines</a>
                 <a className='insideanch' href='/frequently-asked-questions'>Frequently Asked Questions</a>
                 <Link to={`/knowledgecenter`} className='insideanch' href='/'>Knowledge Center</Link>
@@ -35,7 +35,7 @@ export default function Footer(){
                 <h1 className='anchorfoot'>Unlisted Zone</h1>
                 <div className='anchor'>
                     {/* <a className='insideanch' href='/'>About Us </a> */}
-                    <a className='insideanch' href='/drhp'>DRHP-FILED</a>
+                    {/* <a className='insideanch' href='/drhp'>DRHP-FILED</a> */}
                     {/* <a className='insideanch' href='/sellipo'>Become Our Partner</a> */}
                     <a className='insideanch' href='/contactUs'>Contact Us </a>
                     <a className='insideanch' href='/media-coverage'>Media Coverage</a>
@@ -47,11 +47,12 @@ export default function Footer(){
                 </div>
             </div>
             <div className='block4'>
-                <div ></div>
-                <h1 className='anchorfoot'>Our Office</h1>
-                <p className='pfooter'>828,Sector 2B,<br/> Vasundhara, Delhi NCR, India<br/> 201012</p>
-                <p className='pfooter'>Sec 63 H Block 73, Noida,<br/> 201301</p>
-                <p className='pfooter'>sales@unlistedzone.com</p>
+                <div >
+                <h1 className='footoffice'>Our Office</h1>
+                <p className='pfooter'>Office No. 148 & 149,<br/> First Floor, Tower B,<br/> HBF DIRECT LIMITED - <br/> Management Consultant ithum Building,<br/> Sector 62, Noida,</p>
+                <p className='pfooter'>Uttar Pradesh 201301</p>
+                {/* <p className='pfooter'>sales@unlistedzone.com</p> */}
+                </div>
             </div>
         </div>
         </>

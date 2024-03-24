@@ -1,6 +1,6 @@
 .head{
     display: flex;
-    margin: 15px 0px 0px 100px;
+    margin: 1rem 0rem 1rem 3rem;
     font-size: xxx-large;
 }
 .para{
@@ -9,7 +9,7 @@
 .buttonmain{
     height: 50px;
     width: 155px;
-    margin: 25px 0px 0px 600px;
+    margin: 25px 0px 0px 500px;
     background-color: #35A848;
     color: white;
     border-radius: 10px;
@@ -26,7 +26,7 @@
 }
 .imagemain{
     height: 200px;
-    margin: 25px 2px 2px 550px;
+    margin: 25px 2px 2px 475px;
 }
 .box1{
     padding: 25px 0px 0px 25px;
@@ -39,7 +39,7 @@
 }
 .box12>p{
     padding: 8px 0px 0px 10px;
-    margin: 15px 0px 0px 60px;
+    /* margin: 15px 0px 0px 60px; */
     font-weight: bold;
 }
 .box11 > img{
@@ -93,19 +93,21 @@
 }
 .box22>p{
     padding: 8px 0px 0px 10px;
-    margin: 15px 0px 0px 60px;
+    /* margin: 15px 0px 0px 60px; */
     font-weight: bold;
 }
 .boxes{
     display: flex;
 }
 .boxes2{
-    margin: 25px 0px 0px 10px;
     background-color: #E7EEFE;
-    border-radius: 10px ;
+    /* margin: 25px 0px 0px 10px;
+    border-radius: 10px ; */
+    margin: 1rem 1rem 0rem 1rem;
+    border-radius: 1rem;
 }
 .boxes21{
-    height: 120vh;
+    height: 92vh;
     border: 1px solid black;
     width: 30vw;
     border-radius: 10px;
@@ -156,3 +158,42 @@
     width: 12.5rem;
     font-size: 1.5rem;
 }
+.input{
+    width: 70vw;
+    text-align: left;
+    height: 45px;
+    border-radius: 10px;
+    font-size: larger;
+    padding: 0px 0px 0px 30px ;
+    display: flex;
+    margin: 2em 0em 3em 0em;
+  }
+  .searchbar{
+    position: relative;
+    width: 80%;
+    margin: 5em 0em 0em 6em;
+    display: flex;
+  }
+  .buttonNav{
+    height: 40px;
+    width: 74px;
+    margin: 2.5rem 0rem 0rem 1rem;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+  }  
+  .image{
+    height: 20px;
+    position: absolute;
+    margin: 3.3rem 0rem 0rem 53rem;
+    /* margin: 51px 0px 0px -818px; */
+    /* margin: 3.2rem 0rem 0rem -48.5rem; */
+  }
+  .cardviewmorebutton{
+    text-decoration: none;
+    color: black;
+  }
+  .cardviewmorebutton:hover{
+    color: green;
+  }

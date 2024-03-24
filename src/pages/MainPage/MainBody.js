@@ -13,7 +13,14 @@ import EndPage from './MainPageContent/EndPage';
 import TablePage from './MainPageContent/Table';
 import Testimonial from './MainPageContent/Testimonial';
 import {Link} from 'react-router-dom';
-
+import search from '../../assets/images/search.jpg';
+import hbf from '../../assets/images/hbf.png';
+import incomet from '../../assets/images/incomet.png';
+import indus from '../../assets/images/indus.png';
+import relationsai from '../../assets/images/relationsai.png';
+import taiki from '../../assets/images/taiki.png';
+import webyne from '../../assets/images/webyne.png';
+import CardViewMore from "./MainPageContent/CardViewMore.js";
 
 
 export default function MainBody(){
@@ -28,20 +35,27 @@ export default function MainBody(){
         <img className="imagemain" src="https://unlistedzone.com/frontend/img/main-trade.png" alt="image"/>
         </div>
         </div>
+        <div className="searchbar">
+        <img className="image" src={search} alt="searching"></img>
+        <input className='input' type='text' placeholder='Search...'
+        />
+        
+        <button className='buttonNav' type='button'>Search</button>
+        </div>
         <div className='boxes'>
             <div className='boxes1'>
         <div className='box1'>
         <div className='box11'>
-            <img src={nse} alt='nse'/>
+            <img src={hbf} style={{backgroundColor: "#337ab7",margin:"2.5rem 0rem 0rem 0.5rem",width:"6rem",height:"2rem"}} alt='nse'/>
             <p>
-                NSE India Limited Unlisted<br/> Shares <br/>&#8377;4800
+                HBF Limited Unlisted<br/> Shares <br/>&#8377;4800
                 <br/><p> (+0.00)(0%) 15D</p>
                 </p>
         </div>
         <div className='box12'>
-            <Link to={`/polymatech`}><img src={polymatch} alt='nse'/></Link>
+            <Link to={`/polymatech`}><img src={incomet} style={{backgroundColor:"#337ab7",margin:"2.5rem 0rem 0rem 0.5rem",width:"6rem",height: "5rem"}} alt='nse'/></Link>
             <p className='polymatch'>
-                NSE India Limited Unlisted<br/> Shares <br/>&#8377;4800
+                Incomet Limited Unlisted<br/> Shares <br/>&#8377;4800
                 <br/><p> (+0.00)(0%) 15D</p>
                 </p>
         </div>
@@ -49,16 +63,16 @@ export default function MainBody(){
         </div>
         <div className='box1'>
         <div className='box11'>
-            <img src={care} alt='nse'/>
+            <img src={indus} alt='nse' style={{backgroundColor: "#337ab7",margin:"2.5rem 0rem 0rem 0.5rem",width:"6rem",height:"2rem"}}/>
             <p>
-                NSE India Limited Unlisted<br/> Shares <br/>&#8377;4800
+                Indus Limited Unlisted<br/> Shares <br/>&#8377;4800
                 <br/><p> (+0.00)(0%) 15D</p>
                 </p>
         </div>
         <div className='box22'>
-            <h1>P</h1>
+        <img src={relationsai} alt='nse' style={{backgroundColor:"#337ab7",margin:"2.5rem 0rem 0rem 0.5rem",width:"6rem",height: "5rem"}}/>
             <p>
-                NSE India Limited Unlisted<br/> Shares <br/>&#8377;4800
+                Relations AI Limited Unlisted<br/> Shares <br/>&#8377;4800
                 <br/><p> (+0.00)(0%) 15D</p>
                 </p>
         </div>
@@ -66,16 +80,18 @@ export default function MainBody(){
         </div>
         <div className='box1'>
         <div className='box11'>
-            <img src={potash} alt='nse'/>
+            <img src={taiki} alt='nse'style={{backgroundColor: "#337ab7",margin:"2.5rem 0rem 0rem 0.5rem",width:"6rem",height:"2rem"}}/>
             <p>
-                NSE India Limited Unlisted<br/> Shares <br/>&#8377;4800
+                Taiki Limited Unlisted<br/> Shares <br/>&#8377;4800
                 <br/><p> (+0.00)(0%) 15D</p>
                 </p>
         </div>
         <div className='box12'>
-            <h1>U</h1>
+            <div>
+        <img src={webyne} alt='nse' style={{backgroundColor:"#337ab7",margin:"2.2rem 0rem 0rem 0.5rem",width:"6rem",height:"5rem"}}/>
+        </div>
             <p>
-                NSE India Limited Unlisted<br/> Shares <br/>&#8377;4800
+                Webyne Limited Unlisted<br/> Shares <br/>&#8377;4800
                 <br/><p> (+0.00)(0%) 15D</p>
                 </p>
         </div>
@@ -96,7 +112,7 @@ export default function MainBody(){
         </div>
         </div>
         <div>
-        <button type='button' className='bottombutton'>View More</button>
+        <button type='button' className='bottombutton'><a className="cardviewmorebutton" href='/CardViewMore'>View More</a></button>
         </div>
         <BodyInside/>
         <BodyTwo/>

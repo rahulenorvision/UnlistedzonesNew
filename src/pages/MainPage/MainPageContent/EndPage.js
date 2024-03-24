@@ -15,9 +15,9 @@ import Button from '@mui/material/Button';
 export default function EndPage() {
         return (
             <>
-      <Box sx={{fontSize:"xxx-large",padding:"0em 0em 1em 9em",fontWeight: 600}}>Unlisted Shares In News</Box>
-      <Box sx={{display:"flex",justifyContent : "space-evenly"}}>
-    <Card sx={{ maxWidth: 400 }}>
+      <Box sx={{fontSize:"xxx-large",padding:"2rem 0rem 1rem 22rem",fontWeight: 600}}>Unlisted Shares In News</Box>
+      <Box sx={{display:"flex",justifyContent : "space-evenly",margin:"1rem 1rem 0rem 1rem"}}>
+    <Card sx={{ maxWidth: 380 }}>
       <CardActionArea>
         <CardMedia sx={{minHeight:300,cursor: "default"}}
           component="img"
@@ -38,7 +38,7 @@ export default function EndPage() {
         </CardContent>
       </CardActionArea>
     </Card>
-    <Card sx={{ maxWidth: 400 }}>
+    <Card sx={{ maxWidth: 380 }}>
       <CardActionArea>
         <CardMedia sx={{minHeight:300,cursor: "default"}}
           component="img"
@@ -59,7 +59,7 @@ export default function EndPage() {
         </CardContent>
       </CardActionArea>
     </Card>
-    <Card sx={{ maxWidth: 400 }}>
+    <Card sx={{ maxWidth: 380 }}>
       <CardActionArea >
         <CardMedia sx={{minHeight:300,cursor: "default"}}
           component="img"

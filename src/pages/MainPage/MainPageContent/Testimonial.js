@@ -8,7 +8,8 @@ import Typography from '@mui/material/Typography';
 import Rating from '@mui/material/Rating';
 import Container from '@mui/material/Container';
 import Google from'./Google.jpg';
-import Google1 from './Google1.png'
+import Google1 from './Google1.png';
+import google2 from '../../../assets/images/google2.svg';
 
 export default function Testimonial() {
     const [value, setValue] = React.useState(5);
@@ -16,7 +17,7 @@ export default function Testimonial() {
     
       <React.Fragment>
         <Box style={{backgroundColor:"#05053a"}}>
-        <Box sx={{fontSize:"xxx-large",padding: "1em 0em 0em 11em",fontWeight: 700,color:"white"}}>Testimonials</Box>
+        <Box sx={{fontSize:"xxx-large",padding: "1em 0em 0em 10em",fontWeight: 700,color:"white"}}>Testimonials</Box>
         
     <Box sx={{  marginTop: "2em" }}>
     <Box sx={{display:"flex",flexDirection:"row"}}>
@@ -85,8 +86,10 @@ export default function Testimonial() {
     </Box>
     </Box>
     </Box>
-    <Box sx={{padding: "2em 29em 5em 28em"}}><Button  variant="outlined" sx={{height:120,width:450,color:"white",border: "1px solid white",borderRadius: "15px",'&:hover':{backgroundColor:'white',boxShadow:"none",color:"black"}}}><Box ><Box sx={{  fontSize: "large"}}>Click For More Verified Reviews</Box><Box><img src={Google1} alt='GoogleImage'/></Box>
-    <Box><Rating name="read-only" value={value} readOnly /></Box></Box></Button></Box>
+    <Box sx={{padding: "2em 29em 5em 28em"}}><Button  variant="outlined" sx={{height:120,width:450,color:"white",border: "1px solid white",borderRadius: "15px",'&:hover':{backgroundColor:'white',boxShadow:"none",color:"black"}}}><Box ><Box sx={{  fontSize: "large"}}>Click For More Verified Reviews</Box>
+    <Box sx={{width:"12rem",margin:"0rem 0rem 0rem 4.5rem"}}><img src={google2} alt='GoogleImage'/></Box>
+    {/* <Box><Rating name="read-only" value={value} readOnly /></Box> */}
+    </Box></Button></Box>
     </Box>
   </React.Fragment>
   );

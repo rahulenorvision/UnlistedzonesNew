@@ -19,6 +19,7 @@ import KnowledgeCenter from './pages/KnowledgeCenter/KnowledgeCenter.js';
 import Offmarket from './pages/Offmarket/index.js';
 import Sebi from './pages/Sebi/index.js';
 import Frequently from './pages/Frequently/index.js';
+import CardViewMore from './pages/MainPage/MainPageContent/CardViewMore.js';
 // import Media from './pages/Media/index.jsx';
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
          <Route path={'/off-market'} exact element={<Offmarket />}/>
          <Route path={'/sebi'} exact element={<Sebi />}/>
          <Route path={'/frequently-asked-questions'} exact element={<Frequently />}/>
+         <Route path={'/cardviewmore'} exact element={<CardViewMore/>}/>
         {/* <Route path={'/signin'} exact element={<Signin />}/>
         <Route path={'/signup'} exact element={<Signup />}/>
         <Route path={'/forgot'} exact element={<Forgot />}/>

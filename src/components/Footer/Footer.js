@@ -24,7 +24,7 @@ export default function Footer(){
                 <h1 className='anchorfoot'>Quick Links</h1>
                 <div className='anchor'>
                 {/* <a className='insideanch' href='/off-market'>Off Market Annexure</a> */}
-                <a className='insideanch' href='/sebi'>SEBI Guidelines</a>
+                <Link className='insideanch' to='/sebiguide'>SEBI Guidelines</Link>
                 <a className='insideanch' href='/frequently-asked-questions'>Frequently Asked Questions</a>
                 <Link to={`/knowledgecenter`} className='insideanch' href='/'>Knowledge Center</Link>
                 <Link to={`/blog`} className='insideanch' href='/'>Blog</Link>
@@ -42,7 +42,7 @@ export default function Footer(){
                     {/* <a className='insideanch' href='/'>Privacy Policy </a> */}
                     {/* <a className='insideanch' href='/raisefunding'>Raise Funding</a> */}
                     <a className='insideanch' href='/'>Terms Of Use </a>
-                    <a className='insideanch' href='/'>Disclaimer </a>
+                    <Link className='insideanch' to='/disclaimer'>Disclaimer </Link>
                     <a className='insideanch' href='/'>Banking Alert </a>
                 </div>
             </div>

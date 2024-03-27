@@ -11,17 +11,17 @@ export default function Another(){
         <>
         <nav className='nav'>
         <div className='tophalf'>
-        <a href='/'><img style={{width: "11em",padding: "1em 0em 0em 5em",margin: "1em 0em 0em 3em"}} src={aqt}alt="something"/></a>
+        <Link to='/'><img style={{width: "11em",padding: "1em 0em 0em 5em",margin: "1em 0em 0em 3em"}} src={aqt}alt="something"/></Link>
 
         <ul className = 'bottomhalf'>
-        <li className='list'><a className='anc' href='/'>Home</a></li>
-        <li className='list'><a className='anc' href='/unlisted-shares'>Unlisted Share</a></li>
+        <li className='list'><Link className='anc' to='/'>Home</Link></li>
+        <li className='list'><Link className='anc' to='/unlisted-shares'>Unlisted Share</Link></li>
             {/* <li className='list'><a className='anc' href='/drhp'>DRHP-FILED</a></li> */}
-             <li className='list'><a className='anc' href='/sellipo'>Business Opportunities</a></li>
+             <li className='list'><Link className='anc' to='/sellipo'>Business Opportunities</Link></li>
             {/* <li className='list'><a className='anc' href='/screener'>Screener</a></li> */}
-             <li className='list'><a className='anc' href='/media-coverage'>Insights</a></li>
+             <li className='list'><Link className='anc' to='/media-coverage'>Insights</Link></li>
              {/* <li className='list'><a className='anc' href='/raisefunding'>Raise Funding</a></li> */}
-        <li className='list'><a className='anc' href='/contactus'>Contact Us</a></li>
+        <li className='list'><Link className='anc' to='/contactus'>Contact Us</Link></li>
         </ul>
        
         </div>

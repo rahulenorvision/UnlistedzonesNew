@@ -31,7 +31,7 @@ export default function CardViewMore(){
     return(
         <>
         <Navbar/>
-        <Box sx={{margin:"1rem 1rem 1rem 18rem"}}>
+        <Box sx={{margin:"1rem 1rem 1rem 23rem"}}>
         <TextField id="outlined-basic" label="Search" variant="outlined" sx={{width:500}} />
         <Button variant="contained" sx={{margin:"0.5rem 0rem 0rem 0.5rem",backgroundColor:"green"}} color='success'>Search</Button>
         </Box>

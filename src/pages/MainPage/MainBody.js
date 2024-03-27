@@ -102,7 +102,7 @@ export default function MainBody(){
         <div className='boxes21'>
             <h1>Attention Required</h1>
             <div>
-                <p>Create Your Own Account and Begin Your <br/> Investment Journey In Unlisted Shares With <br/> UnlistedZones.</p>
+                <p>Create Your Own Account and Begin Your <br/> Investment Journey In Unlisted Shares With <br/> AQT Direct.</p>
             </div>
             <div className='buttmycard'>
             <button className='butmycard' type='button' >Complete Setup</button>
@@ -112,7 +112,7 @@ export default function MainBody(){
         </div>
         </div>
         <div>
-        <button type='button' className='bottombutton'><a className="cardviewmorebutton" href='/CardViewMore'>View More</a></button>
+        <button type='button' className='bottombutton'><Link className="cardviewmorebutton" to='/CardViewMore'>View More</Link></button>
         </div>
         <BodyInside/>
         <BodyTwo/>

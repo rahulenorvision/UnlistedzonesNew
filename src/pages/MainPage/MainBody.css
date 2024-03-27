@@ -183,10 +183,11 @@
     background-color: black;
     border-radius: 10px;
   }  
+  
   .image{
     height: 20px;
     position: absolute;
-    margin: 3.3rem 0rem 0rem 53rem;
+    margin: 3.3rem 0rem 0rem 60rem;
     /* margin: 51px 0px 0px -818px; */
     /* margin: 3.2rem 0rem 0rem -48.5rem; */
   }

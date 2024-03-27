@@ -66,12 +66,12 @@ const rows = [
 export default function TablePage() {
   return (
     <>
-    <Box sx={{"backgroundColor":"#EEF5F9","height":"80rem"}}>
+    <Box sx={{"backgroundColor":"#EEF5F9","height":"75rem"}}>
     <Typography variant='h3' style={{ "marginLeft": "23rem","paddingTop": "2rem",    "fontWeight": "500"}}>Past IPO Performance</Typography>
     <Typography component={'p'} style={{ "marginLeft": "15rem","marginTop": "1rem","marginBottom": "3rem"}}>Explore the Historical IPO Performance of Unlisted Shares to Inform Your Investment Strategy Today.</Typography>
     <TableContainer component={Paper} style={{ "overflow":"hidden","height": "58rem",
-    "width": "75rem","marginLeft": "0.7rem","borderRadius": "1rem"}}>
-      <Table sx={{ minWidth: 700 }} aria-label="customized table" >
+    "width": "98%","marginLeft": "0.7rem","borderRadius": "1rem"}}>
+      <Table  aria-label="customized table" >
         <TableHead >
           <TableRow >
             <StyledTableCell>Name</StyledTableCell>
